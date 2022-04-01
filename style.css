@@ -1,24 +1,25 @@
 body {
-    /* background: red; */
-    font-family: 'Roboto', sans-serif;
+  /* background: red; */
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 #header__logo {
-    width: 160px;
-    height: 160px;
-    background: url('img/header_logo_close.png');
-    background-size: contain;
-    margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  background: url("img/header_logo_close.png");
+  background-size: contain;
+  margin: 0 auto;
 }
 
 #header__logo:hover {
-    background-image: url('img/header_logo_open.png');
+  background-image: url("img/header_logo_open.png");
 }
 
 #header__text {
-    font-size: 24px;
+  margin-top: 20px;
+  font-size: 24px;
 }
