@@ -1,0 +1,107 @@
+@use '../../styles/breakpoint.scss';
+
+#intro-container {
+  text-align: center;
+  margin: 25px 0;
+
+  @media (min-width: breakpoint.$tablet) {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+#portrait {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  
+  @media (min-width: breakpoint.$tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: breakpoint.$desktop) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+#intro-words {
+  display: block;
+  text-align: center;
+  
+  @media (min-width: breakpoint.$tablet) {
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    vertical-align: top;
+  }
+
+  @media (min-width: breakpoint.$desktop) {
+    margin-left: 30px;
+  }
+}
+
+#intro-heading {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: breakpoint.$tablet) {
+    font-size: 32px;
+  }
+
+  @media (min-width: breakpoint.$desktop) {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+
+#intro-description {
+  font-size: 16px;
+  margin: 0;
+  
+  @media (min-width: breakpoint.$tablet) {
+    font-size: 18px;
+  }
+
+  @media (min-width: breakpoint.$desktop) {
+    font-size: 18px;
+  }
+}
+
+#intro-icon-links-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+
+  @media (min-width: breakpoint.$tablet) {
+    justify-content: start;
+  }
+
+  @media (min-width: breakpoint.$desktop) {
+    margin-top: 20px;
+  }
+}
+
+.link-icon {
+  height: 24px;
+  width: 24px;
+  transition: 0.1s ease all;
+  border-radius: 5px;
+  padding: 8px;
+  margin: -8px;
+}
+
+#twitch-icon:hover {
+  background-color: #a970ff55;
+}
+
+#itchdotio-icon:hover {
+  background-color: #ff0b3455;
+}
